@@ -36,7 +36,7 @@ export default class StudentList extends Component {
     return (
       <div>
         <h5>Student List</h5>
-        <Table striped bordered hover>
+        <Table striped bordered hover variant="dark">
             <thead>
                 <tr>
                     <th>Number</th>
@@ -57,7 +57,7 @@ export default class StudentList extends Component {
                             <td>{res.lastname}</td>
                             <td>{res.email}</td>
                             <td>
-                                <Link className='btn btn-warning' path={"/edit-student/:id"} to ={'/edit-student/'+res._id}>Edit</Link>
+                                <Link className='btn btn-warning' to ={'/edit-student/'+res._id}>Edit</Link>
                                 {'  '}{'  '}
                                 <Button className='btn btn-danger' onClick={() => { window.confirm('Are you sure you want to delete this item?') && this.deleteStudent(res._id)}}>Delete</Button>
                             </td>

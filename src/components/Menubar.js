@@ -5,9 +5,6 @@ import Home from './Home';
 import About from './About';
 import StudentList from './StudentList';
 
-
-
-
 export default class Menubar extends Component {
   render() {
     return (
@@ -40,11 +37,11 @@ export default class Menubar extends Component {
                         </NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
-                <Nav>
+                {/* <Nav>
                     <Navbar.Text>
                         Sign in as : Gatesuda
                     </Navbar.Text>
-                </Nav>
+                </Nav> */}
             </Navbar.Collapse>
         </Container>
       </Navbar>
